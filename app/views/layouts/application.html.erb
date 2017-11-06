@@ -4,13 +4,19 @@
     <title>RailsStupidCoaching</title>
     <%= csrf_meta_tags %>
 
+    <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", media: 'all' %>
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
 
-    <h1>Stupid Coach Exercise 2.0</h1>
-    <%= yield %>
+    <h1 class="text-center">Stupid Coach Exercise 2.0</h1>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
