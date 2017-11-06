@@ -1,7 +1,19 @@
-<h2><i><%= @question %></i></h2>
-
-<h4>The Coach replies</h4>
-
-<h2><%= @reply %></h2>
-
-<%= link_to("Ask another question", "ask", class: "btn btn-primary") %>
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="chat">
+        <h3><%= @question %></h3>
+        <p><i>-you</i></p>
+      </div>
+    </div>
+    <div class="col-xs-12">
+      <div class="chat">
+        <h3><%= @reply %></h3>
+        <p><i>-coach</i></p>
+      </div>
+    </div>
+  </div>
+  <div class="row col-xs-12">
+    <%= link_to("Ask another question", "ask", class: "btn btn-primary") %>
+  </div>
+</div>
